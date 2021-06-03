@@ -15,7 +15,6 @@ my_screen.tracer(0)
 
 player = Player()
 scoreboard = ScoreBoard()
-cars_list.append(Cars())
 
 my_screen.listen()
 my_screen.onkey(key='Up', fun=player.move)
@@ -38,6 +37,5 @@ while is_game_on:
     if player.ycor() > 300:
         player.goto(x=0, y=-280)
         scoreboard.next_level()
-
 
 my_screen.exitonclick()
